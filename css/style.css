@@ -1,0 +1,14 @@
+
+.stars-style{
+    display:inline-block;
+    font-size:35px;
+}
+
+.selected{
+    color:#df0 !important;
+}
+
+.unselected{
+
+color:#ddd !important;
+}

@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Rating</title>
+    <intercept-url pattern="/favicon.ico" access="ROLE_ANONYMOUS" />
+    <link href="css/style.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>-->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="js/RatingModule.js"></script>
+    <script src="js/appCtrl.js"></script>
+    <script src="js/StarRating.component.js"></script>
+</head>
+
+<body ng-app="RatingModule" ng-controller="appCtrl as ctrl">
+    <star-rating ng-model="ctrl.number" max-stars="5"></star-rating>
+</body>
+
+</html>

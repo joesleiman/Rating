@@ -1,0 +1,4 @@
+<div ng-repeat="x in $ctrl.stars" class="stars-style" ng-class="{'selected' : x.selected, 'unselected' : !x.selected }">
+     <i ng-click="$ctrl.fill($index)" class="fa fa-star"></i> 
+</div>
+ 
